@@ -6,10 +6,24 @@ using System.Threading.Tasks;
 
 namespace WordIterating
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            string text = "abcdef";
+            int i;
+
+            for (i = 1; i <= text.Length; i++)
+                Console.Write(text[text.Length-i] + ";");
+
+            Console.ReadKey();
         }
+
+        public static string InvertInput()
+        {
+            return "ok";
+        }
+
+
     }
 }
